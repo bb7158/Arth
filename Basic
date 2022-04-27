@@ -1,4 +1,5 @@
 #include <stdio.h>
+#include <math.h>
 
 int main() {
     
@@ -8,12 +9,16 @@ int main() {
     printf("\n[B] Press 2 to Subtract \n");
     printf("\n[C] Press 3 to Multiply \n");
     printf("\n[D] Press 4 to Divide   \n");
-    printf("\n[E] Press 5 to get Quotient \n");
-    printf("\n[F] Press 6 to get Remainder    \n");
-    printf("\n[G] Press 7 to get Power  \n" );
+    printf("\n[E] Press 5 to get Remainder    \n");
+    printf("\n[F] Press 6 to get Power  \n" );
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("\n[G] Press 7 to Check if Number is  Odd or Even \n ");
+    printf("\n[H] Press 8 to Check if Number is  Prime \n ");
+    
     printf("\nPlease Select Your Option: " );
     int x;
     int y,z;
+    int i;
     scanf("%d",&x);
     
    
@@ -44,7 +49,32 @@ int main() {
          printf("%d",y/z);
         
     }
+    if (x==5) {
+         printf("Enter Two Numbers to get Remainder: ");
+         scanf("%d%d",&y,&z);
+         printf("%d",y%z);
+        
+    }
     
+    if (x==6) {
+         printf("Enter Two Numbers to get Power: ");
+         scanf("%d%d",&y,&z);
+         i=pow(y,z);
+         printf("%d",i);
+        
+    }
+    
+    if (x==7) {
+         printf("Enter The Number: ");
+         scanf("%d",&i);
+        
+    if (i%2==0) { printf("Number is Even");}
+    else { printf("Number is Odd");}
+        
+    }
+    
+    
+  
     
          
         
