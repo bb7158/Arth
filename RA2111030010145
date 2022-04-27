@@ -11,17 +11,19 @@ int main() {
     printf("\n[D] Press 4 to Divide   \n");
     printf("\n[E] Press 5 to get Remainder    \n");
     printf("\n[F] Press 6 to get Power  \n" );
-    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
+    printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
     printf("\n[G] Press 7 to Check if Number is  Odd or Even \n ");
     printf("\n[H] Press 8 to Check if Number is  Greater \n ");
+    printf("\n[I] Press 9 to Print Number in Octadecimal \n ");
+    printf("\n[J] Press 10 to Print Number in Hexadecimal \n ");
     
     printf("\nPlease Select Your Option: " );
     int x;
     int y,z;
-    int i,c;
+    int i,c,e;
     scanf("%d",&x);
     
-   
+ 
    
     if (x==1) {
         printf("Enter Two Numbers To Add: ");
@@ -77,15 +79,23 @@ int main() {
          printf("Enter Two Numbers: ");
          scanf("%d%d",&y,&z);
     if (y>z) {printf("%d is Greater than %d",y,z);}
-    else if (z>y) {printf("%d is Greater than %d",z,y);}
+    if (z>y) {printf("%d is Greater than %d",z,y);}
+    if (y==z) {printf("The Numbers are equal");}
     }
     
+    if (x==9) {
+        printf("Enter The Number: ");
+        scanf("%d",&y);
+        printf("%o",y);
+      
+    }
     
-  
-    
-         
-        
-    
+    if (x==10) {
+        printf("Enter The Number: ");
+        scanf("%d",&y);
+        printf("%x",y);
+    }
+   
     
     
     return 0;
