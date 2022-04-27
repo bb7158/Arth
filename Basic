@@ -13,12 +13,12 @@ int main() {
     printf("\n[F] Press 6 to get Power  \n" );
     printf("\n~~~~~~~~~~~~~~~~~~~~~~~~~~~~\n");
     printf("\n[G] Press 7 to Check if Number is  Odd or Even \n ");
-    printf("\n[H] Press 8 to Check if Number is  Prime \n ");
+    printf("\n[H] Press 8 to Check if Number is  Greater \n ");
     
     printf("\nPlease Select Your Option: " );
     int x;
     int y,z;
-    int i;
+    int i,c;
     scanf("%d",&x);
     
    
@@ -71,6 +71,13 @@ int main() {
     if (i%2==0) { printf("Number is Even");}
     else { printf("Number is Odd");}
         
+    }
+    
+     if (x==8) {
+         printf("Enter Two Numbers: ");
+         scanf("%d%d",&y,&z);
+    if (y>z) {printf("%d is Greater than %d",y,z);}
+    else if (z>y) {printf("%d is Greater than %d",z,y);}
     }
     
     
