@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main() {
+    
+    printf("\n*** Welcome Please Choose Any One Option ***    \n");
+    
+    printf("\n[A] Press 1 to Add  \n ");
+    printf("\n[B] Press 2 to Subtract \n");
+    printf("\n[C] Press 3 to Multiply \n");
+    printf("\n[D] Press 4 to Divide   \n");
+    printf("\n[E] Press 5 to get Quotient \n");
+    printf("\n[F] Press 6 to get Remainder    \n");
+    printf("\n[G] Press 7 to get Power  \n" );
+    printf("\nPlease Select Your Option: " );
+    int x;
+    int y,z;
+    scanf("%d",&x);
+    
+   
+   
+    if (x==1) {
+        printf("Enter Two Numbers To Add: ");
+        scanf("%d%d",&y,&z);
+        printf("%d",y+z);
+     
+    }
+    
+
+    if (x==2) {
+        printf("Enter Two Numbers To Subtract: ");
+        scanf("%d%d",&y,&z);
+        printf("%d",y-z);
+    }
+    
+    if (x==3) {
+        printf("Enter Two Numbers To Multiply: ");
+        scanf("%d%d",&y,&z);
+        printf("%d",y*z);
+    }
+    
+    if (x==4) {
+         printf("Enter Two Numbers To Divide: ");
+         scanf("%d%d",&y,&z);
+         printf("%d",y/z);
+        
+    }
+    
+    
+         
+        
+    
+    
+    
+    return 0;
+}
